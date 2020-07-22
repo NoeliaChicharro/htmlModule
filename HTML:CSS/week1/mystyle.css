@@ -1,0 +1,20 @@
+/* element selector - these selects all elemetns with this 'name' */
+/* the universal selector - selevts everything (*) */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: lime;
+}
+
+nav{
+    background-color: coral;
+}
+
+#firstHeader{
+    background-color: pink;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <title>CSS Sprites</title>
+    <style>
+        body {background: lightgrey;font-family: Verdana,Arial, sans-serif;}
+    </style>
+</head>
+
+<body>
+    <!-- KREIS MIT UMRANDUNG -->
+    <h4>Kreis als CSS-Logo</h4>
+    <style>
+        #willkommen {
+            font-size: 28px;
+            font-family: Verdana, Arial, sans-serif;
+            color: green; 
+            font-weight: 800;
+            position: relative;   
+        }
+        #kreis {
+            display: inline-block;
+            width: 50px;
+            height: 50px; 
+            background: #60beac; 
+            color: blue;
+            border-radius: 50%;    
+            box-shadow: 0 0 0 4px white, 0 0 0 8px red;
+            margin-right: 10px;
+            text-align: center;
+            position: relative; 
+            top:-8px;; 
+        }
+        #kreis > span {
+            position: relative; 
+            top: 15%;     
+        }
+    </style>
+    <p id="willkommen">
+        <span id="kreis">
+            <span>W</span>
+        </span>illkommen
+    </p>
+  
+    <!-- LEUCHT-EFFEKT -->
+    <h4>Leucht-Effekt /  Grell</h4>
+    <style>
+        #leuchte {
+            font-size: 28px; 
+            text-shadow: 0 0 3px white, 0 0 6px white, 0 0 10px white;
+            
+        }
+    </style>
+    <p id="leuchte">Ich leuchte.</p>
+
+    <!-- ABKANTUNG -->
+    <h4>Abkantung/eingestanzt (engl. emboss)</h4>
+    <style>
+        #stanzung {
+            font-size: 28px; 
+            text-shadow: 0 -1px 2px #777777, 0 1px 2px #ffffff; 
+        }
+    </style>  
+    <p id="stanzung">Ich habe eine vertiefte Kontur</p>
+
+    <!-- RELIEF -->
+    <h4>Relief (engl. bevel)</h4>  
+    <style>
+        #relief {
+            font-size: 28px; 
+            text-shadow: 0 -1px 2px #fff, 0 1px 2px #777777; 
+        }
+    </style> 
+    <p id="relief">Ich habe eine erhöhte Kontur.</p>    
+</body>
+
+</html>

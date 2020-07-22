@@ -1,0 +1,16 @@
+main{
+  h1{
+    color: $titleColor;
+    font-family: $font;
+    background: $titleBackground;
+    @include flex(row, center, center);
+    padding: $top $right $bottom $left;
+  }
+
+  p{
+    color: $textColor;
+    font-family: $font;
+    text-align: center;
+    padding: $top $right $bottom $left;
+  }
+}

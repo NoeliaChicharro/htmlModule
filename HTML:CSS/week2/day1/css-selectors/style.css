@@ -1,0 +1,112 @@
+/* === Reset === */
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body{
+    background-color: gray;
+}
+
+/* === Element Selector === */
+section{
+    border: solid 1px black;
+    width: 400px;
+    height: 400px;
+}
+
+/* === Comma Selector == */
+h1, h2{
+    font-family: sans-serif;
+}
+
+/* === Decendant Selector === */
+div h2{
+    font-family: monospace;
+}
+
+/* === Class Selector === */
+.bor-red{
+    border: solid red 1px;
+}
+
+/* === ID Selcetor === */
+#firstSection{
+    background-color: pink;
+}
+
+/* === An element with a class === */
+h2.bor-red{
+    border-style: dashed;
+}
+
+/* === Attribute Selector === */
+img[alt]{
+    border: solid 5px gold;
+}
+
+/* === Attribute Value Selector === */
+img[alt="An alien"]{
+    border: dotted 4px slateblue;
+}
+
+/* === Direct Child Selector === */
+section div{
+    background-color: orange;
+    height: 10px;
+    width: 10px;
+    margin: 5px;
+}
+
+section > div{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+/* === Adjacent Sibling Selector === */
+/* a + small{
+    color: hotpink;
+} */
+
+/* === General Sibling Selector === */ 
+a ~ small{
+    color: hotpink;
+} 
+
+/* === Hover === */
+#click-me{
+    height: 20px;
+    width: 80px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+#click-me:hover{
+    background-color: violet;
+}
+
+/* === Nth-Child === */
+ul li:nth-child(even){
+    color: blueviolet;
+}
+
+ul li:nth-child(odd){
+    color: lightseagreen;
+}
+
+ul li:nth-child(1){
+    color: red
+}
+
+/* === Pseude Classes === */
+h2::first-letter{
+    color: violet;
+}
+
+/* === Before and After === */
+h1::before{
+    content: url('http://placekitten.com/200/200');
+}
+

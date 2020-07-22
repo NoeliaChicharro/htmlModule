@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Nav</title>
+    <style>
+        ul > li {
+            border: black 1px solid;
+            list-style: none;
+        }
+
+        .mainNavigation{
+            display: flex;
+        }
+
+        .mainNavigation ul{
+            transform: scaleY(0);
+            position: absolute;
+            top: 100%;
+            left: -100%;
+            transition: 1s;
+            transform-origin: center top;
+        }
+
+        .subnavTrigger{
+            position: relative;
+        }
+
+        .subnavTrigger:hover{
+            cursor: pointer;
+        }
+
+        .subnavTrigger:hover ul{
+            transform: scaleY(1);
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="mainNavigation">
+        <li>Nav 1</li>
+        <li class="subnavTrigger">Nav 2
+            <ul>
+                <li>Dropdown 1</li>
+                <li>Dropdown 2</li>
+            </ul>
+        </li>
+        <li>Nav 3</li>
+    </ul>
+</body>
+</html>

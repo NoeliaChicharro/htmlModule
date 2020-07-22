@@ -1,0 +1,16 @@
+.nav{
+  width: 100vw;
+  height: 10vh;
+  background: $mainBackground;
+
+  ul{
+    @extend .nav;
+    list-style: none;
+    @include flex(row, center, center);
+  }
+
+  li{
+    padding: 0 0.5rem 0 0.5rem;
+    color: $textColor;
+  }
+}

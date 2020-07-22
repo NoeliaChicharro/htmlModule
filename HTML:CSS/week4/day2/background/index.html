@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- background images should just be used as desing element. if the image is needed for the contents make img-tag!
+(screenreaders can't read background!) 
+If u put an image as tag it is easier to steal. (background must be get in inspector) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background</title>
+    <style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        border: solid 1px black;
+        background-color: lightcoral;
+        width: 500px;
+        height: 400px;
+        background-image: url('download.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 90%;
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

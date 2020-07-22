@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+/* === variables === */
+
+:root {
+  --pri-color: #C50000;
+  --sec-color: #FF0000;
+  --ter-color: #00CC00;
+  --qua-color: #009999;
+  --black: #141010;
+  --white: #eaeaea;
+}
+
+/* === body === */
+
+body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* === Navigation START === */
+
+aside.navigation{
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 30em;
+  background-color: var(--pri-color)
+}
+
+.navigation nav{
+  width: 100%;
+  height: 50%;
+}
+
+.navigation nav ul{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding: 0 4em;
+}
+
+.navigation nav ul li{
+  padding: 2em 0;
+  list-style: none;
+  text-align: right;
+  position: relative;
+  width: 100%;
+}
+
+.navigation nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #444;
+  background-image: linear-gradient(to right, #FF3939, #FF6363);
+ }
+
+.navigation nav ul li a{
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: var(--white)
+}
+
+
+
+
+/* === Navigation END === */
+
+
+div.wrapper{
+  background-color: #888;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+header.start{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--sec-color);
+}
+
+section.offer{
+  height: 120vh;
+  width: 100%;
+  background-color: var(--ter-color);
+}
+
+section.info{
+  height: 120vh;
+  width: 100%;
+  background-color: var(--qua-color);
+}
+
+section.contact{
+  height: 100vh;
+  width: 100%;
+  background-color: var(--sec-color);
+}
+
+footer.foot{
+  height: 30vh;
+  width: 100%;
+  background-color: #FF3939;
+}

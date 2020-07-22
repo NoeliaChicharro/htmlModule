@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 20px;
+    background-image: url("Vandenbroeck-geometry-point-81.jpg");
+    display: flex;
+    justify-content: center;
+}
+
+.parent{
+    padding-top: 30px;
+    background-color: rgb(83, 82, 82);
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+                    "header header header header header"
+                    ". main main main ."
+                    ". . section . ."
+                    "footer footer footer footer footer";
+}
+
+.parent header{
+    grid-area: header;
+    background-color: rgb(243, 105, 105);
+}
+
+ .parent main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px 5px;
+}
+
+.parent main div{
+    background-color: rgb(175, 177, 84);
+}
+
+.parent main{
+    grid-area: main;
+    background-color: rgb(83, 82, 82);
+}
+
+.parent section{
+    grid-area: section;
+    background-color: rgb(161, 48, 48);
+}
+
+.parent footer{
+    grid-area: footer;
+    background-color: rgb(37, 90, 37);
+}
+
+.parent header, .parent main div, .parent section, .parent footer{
+    border-radius: 5px;
+    padding-left: 5px;
+}

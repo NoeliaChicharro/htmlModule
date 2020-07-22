@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+/* === End of Reset === */
+
+body{
+  width: 100%;
+}
+
+nav{
+  min-height: 10vh;
+  width: 100%;
+  background: #222;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul{
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  color:black;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: #eee;
+  font-weight: 800;
+}
+
+nav ul li a:hover{
+  color: purple;
+}
+
+nav img{
+  height: 10vh;
+  margin-left:2em;
+  margin-right: auto;
+}
+
+header{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: #eee;
+  background: #3b2747;
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 7em;
+}
+
+main{
+  color: #eee;
+  font-family: 'Lato', sans-serif;
+  background: #472151;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main h2{
+  margin-bottom: 15px;
+}
+
+main input{
+  margin: 10px 0;
+}
+
+main div{
+  display: flex;
+  flex-direction: column;
+}
+
+footer{
+  width: 100%;
+  background-color: #624185;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 2em;
+}
+
+footer .social-media{
+  color: #222;
+  width: 30%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-media i{
+  font-size: 5vh;
+
+}
+
+footer small{
+  color: #eee;
+  text-shadow: #222 1px 1px 2px;
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* === Selectors === */
+
+section.selectors{
+  min-height:60vh;
+  padding: 4em;
+  background-color: #222;
+  color: #eee;
+}
+
+section.selectors > hr{
+  margin: 2em 0;
+}
+
+section.selectors  ul{
+  margin-left: 1em;
+}
+
+/* === delete start === */
+section.selectors > ul{
+  color: orange;
+}
+
+section.selectors > ul > li > ul{
+  color: lime;
+}
+
+section.selectors > ul > li > ul > li >ul{
+  color: gold;
+}
+
+/* === delete endd === */
+
+section.selectors table{
+  
+  border-collapse: collapse;
+}
+
+section.selectors table td,section.selectors table th{
+  border: solid 1px lightgray;
+  padding: 5px;
+}
+
+/* === delete start === */
+section.selectors table th{
+  color: orange;
+  font-family: sans-serif;
+  background-color: #444;
+}
+
+section.selectors table tr td:nth-child(2){
+  font-family: monospace;
+  color: lime;
+}
+
+section.selectors table tr:nth-child(even){
+  background-color: black;
+}
+/* === delete endd === */
+
+section.selectors div.box-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2em;
+}
+
+section.selectors div.box{
+  width: 150px;
+  height: 150px;
+  border: solid #eee 1px;
+}
+
+.box{
+  background-color: orange;
+}
+
+#boxy{
+  background-color: hotpink;
+}
+
+#boxy ~ div{
+  background-color: lime;
+}
+
+
+#boxy + div{
+  background-color: gold;
+}

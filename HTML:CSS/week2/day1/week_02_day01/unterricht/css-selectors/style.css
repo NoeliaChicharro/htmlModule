@@ -1,0 +1,132 @@
+/* === Reset === */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #666;
+}
+
+/* === Element Selector === */
+
+section{
+  border: solid 1px black;
+  width: 400px;
+  height: 400px;
+}
+
+h1, h2{
+  font-family: sans-serif;
+}
+
+/* === Decedant Selector === */
+
+
+div h2{
+  font-family: monospace;
+}
+
+
+/* === Class Selector === */
+#higherPriority{
+  border-color: blue;
+}
+
+.bor-red{
+  border: red 1px solid;
+}
+
+/* === ID Selector === */
+
+#firstSection{
+  background-color: pink;
+}
+
+/* === An element WITH the class bor-red === */
+
+h2.bor-red{
+  border-style:  dashed;
+}
+
+/* === Attribute Selector === */
+
+img[alt]{
+  border: solid 5px gold;
+}
+
+/* === Attribute Value Selector === */
+
+img[alt="An alien"]{
+  border: dotted 4px red;
+}
+
+
+/* === Direct child selector === */
+
+section div{
+  background-color: orange;
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+}
+
+section > div{
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+
+/* === Adjacent sibling selector === */
+
+/* a + small{
+  color: hotpink;
+} */
+
+/* === General sibling selector === */
+
+a ~ small{
+  color: hotpink;
+}
+
+/* === Hover === */
+
+#click-me{
+  height: 20px;
+  width: 80px;
+  background-color: gold;
+  text-align: center;
+}
+
+#click-me:hover{
+  background-color: rgb(255, 238, 141);
+}
+
+/* === nth child === */
+
+
+ul li:nth-child(even){
+  color: blueviolet;
+}
+
+ul li:nth-child(odd){
+  color: lightcoral;
+}
+
+ul li:nth-child(1){
+  color: red;
+}
+
+/* === Pseudo Classes === */
+
+h2::first-letter{
+  color: skyblue;
+}
+
+/* === Before & After === */
+
+h1::before{
+  content: url('http://placekitten.com/200/200')
+}

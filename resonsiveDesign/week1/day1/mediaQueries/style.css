@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.second{
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.third{
+    width: 100%;
+    height: 400px;
+    background-color: hotpink;
+}
+
+.third img{
+    width: 100%;
+    height: max-content;
+}
+
+
+.second, .third{
+    border: 1px solid skyblue;
+}
+
+@media only screen and (max-width:900px){
+    .third{
+        background-color: blueviolet;
+    }
+
+    .third img{
+        display: none;
+    }
+
+    .second{
+        border: 5px dotted rebeccapurple;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .third{
+        background-color: aquamarine;
+    }
+}

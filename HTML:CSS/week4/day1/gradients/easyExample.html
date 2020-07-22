@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The default gradient is from top to bottem. 
+If u tipe in to right, it will change the direction. (there are a lot of directions (googel it)) -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Easy Example Gradient</title>
+    <style>
+   .lala{
+       width: 200px;
+       height: 200px;
+       background-image: linear-gradient(to right , rgb(23, 228, 23), rgb(240, 133, 240))
+       /* direction */
+   }
+
+   .blabla{
+       width: 200px;
+       height: 200px;
+       background-image: linear-gradient(rgb(23, 228, 23), rgb(240, 133, 240)) 
+       /* default */
+   }
+
+   .italy{
+       width: 300px;
+       height: 200px;
+       background-image: linear-gradient(to right, #009246 33%, #fff 33% ,#fff 66%,  #CE1126 66%)
+       /* It does not matter what massurement u use. */
+   }
+
+   .colombia{
+       width: 300px;
+       height: 200px;
+       background-image: linear-gradient(rgb(212, 212, 7) 50%, blue 50% ,blue 75%,  red 75%)
+   }
+
+   .tanzania{
+       width: 300px;
+       height: 200px;
+       background-image: linear-gradient(to bottom right, green 33%, yellow 33%, yellow 39%, 
+                                            black 39%, black 61%, yellow 61%, yellow 66%, blue 66%)
+   }
+
+   .murzia{
+       width: 300px;
+       height: 200px;
+       background-image: repeating-linear-gradient(red, red 7.69%, #fff 7.96%, #fff 15.38%)
+       /* repeating helps reducing redondance */
+   }
+
+   .zimbabwe{
+       width: 200px;
+       height: 200px;
+       background-image: linear-gradient(to bottom, green calc(1/7 * 100%),
+                                        ) 
+        /* so u don't have to calculate all by your selfe */
+   }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="lala">
+    </div>
+
+    <div class="blabla">
+    </div>
+
+    <hr>
+
+    <div class="italy">
+    </div>
+
+    <hr>
+    
+    <div class="colombia">
+    </div>
+
+    <hr>
+
+    <div class="tanzania">
+    </div>
+
+    <hr>
+
+    <div class="murzia">
+        <div class="box"></div>
+    </div>
+
+    <hr>
+
+    <div class="zimbabwe">
+
+    </div>
+
+    <hr>
+
+    <div class="swiss">
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+$textColor: azure;
+$titleColor: hotpink;
+$mainBackground: gray;
+$titleBackground: lightgreen;
+$top: 1rem;
+$right: 0.5rem;
+$bottom: 1rem;
+$left: 0.5rem;
+$font: TSTAR;
+
+@mixin flex($direction,$justify, $align){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

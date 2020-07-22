@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- to insert fonts just use the 'font-family' tag. 
+if u wanna use other fonts u have to improt them (@import).
+Do this before the reset. it has to be downloadet!
+to check the font go to 'caniuse.com' (shows which browser let's u use the font-format.) use WOF to be sure!
+
+where i get fonts?
+google fonts (on here, all should be free), adobe,  (but be carful, not all of them are free) 
+
+how to use those fonts?
+just import them as told above. this will be written in the html file (not in css file!)
+
+use fallback fonts! if some user can't see the original font, there's a fall back. 
+(sans-serif is on every device and every browser)
+
+what we wanna use own fonts?
+put the file into the used folder and link them to the file with @font-face. 
+
+Remember: never ever use px for font size. use rem (or em) to update the size depending on the device and soom size.
+If you're not sure if u should use rem or em, use rem.:) default 16px = 1rem -->
+
+<head>
+    <meta charset="UTF-8"> <!-- that's for europiean (or even the whole world) 'schriftsatz' -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fonts</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Stylish');
+    @font-face {
+        font-family: "Alhenya";
+        src: url('AlhenyaScript.ttf')
+    }
+
+    p{
+        font-family: 'Alhenya', sans-serif; 
+    }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, fugit!</p>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+/* ===  === */
+/* === Selectors === */
+/* ===  === */
+
+/* === element selector === */
+body{
+  background: #555;
+}
+
+section{
+  width: 200px;
+  height: 200px;
+  border: solid #222 1px;
+  margin: 1em;
+}
+
+/* === Comma Separator === */
+
+h1, h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* === Descendant selector === */
+
+ul li{
+  font-family: monospace;
+  font-weight: bolder;
+  color: #222;
+  font-size: 1.3em;
+  list-style: none;
+}
+
+/* === Class Selector === */
+
+.bor-red{
+  border: solid 1px #da3b3b;
+}
+
+.gallery h2{
+  color: rgb(89, 137, 251);
+}
+
+/* === ID Selctor === */
+
+/*This has higher priority even though it is first*/
+section#firstSection{
+  color: lime;
+}
+
+#firstSection{
+  border-color: darkmagenta;
+  color: magenta;
+}
+
+/* === Element with a class or ID === */
+
+h2.bor-red{
+  border: none;
+}
+
+/* === Attribute selector === */
+
+img[alt]{
+  border: solid 2px gold;
+}
+
+/* === Attribute with value selector === */
+
+img[alt="An alien"]{
+  border: dotted 5px greenyellow;
+}
+
+/* === Child Selector === */
+section div{
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  margin: 5px
+}
+section > div{
+  background-color: khaki;
+  width: 100px;
+  height: 100px;
+  margin: 5px
+}
+
+
+/* === Adjacent Sibling Selector === */
+a + small{
+  color: hotpink;
+}
+
+/* === Gerneral Sibling Selector === */
+
+a ~ small{
+  text-decoration: underline;
+  font-size: 1.5em;
+}

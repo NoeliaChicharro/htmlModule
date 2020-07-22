@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Sprites are images with different img on it. then u just move over the sheet,
+and don't have to load a new image every time. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        border: solid 1px black;
+        background-color: aqua;
+        width: 48px;
+        height: 48px;
+        background-image: url('sprite-social.gif');
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+    div:hover{
+        background-position: 0px -55px;
+    }
+
+    div:active{
+        background-position: 0px -112px;
+    }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

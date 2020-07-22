@@ -1,0 +1,17 @@
+@import "mixinAndVars";
+@import "nav";
+@import 'main';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: $mainBackground;
+}
+
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">   
+    
+<!-- The default box-size is content-box; 
+imagine: u do have some content of wigth 400px and heith 300px. now put some padding of 20px. (the box is 440px/340px)
+if we put in some border of 2px this pixels will be addet to the box size too. 
+So actually u should remove content size if u add padding or borders! 
+To avoid that there's a second box type. Border-box! This box includes padding and border too. So u don't have to resize it 
+every time u add something new.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box-sizing</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+    }
+
+    .container{
+        width: 400px;
+        height: 400px;
+        border: solid 2px black;
+    }
+
+    .box{
+        width: 400px;
+        height: 400px;
+        background-color: lightseagreen;
+        padding: 20px;
+    }
+    
+    #content{
+        background-color: hotpink;
+        box-sizing: content-box;
+    }
+
+    #border{
+        /* it is allway recomandet to use this version. (best practice use it in reset) */
+        box-sizing: border-box;
+    }
+
+    </style>
+
+</head>
+<body>  
+    <div class="container">
+            <div id="content" class="box"></div>
+    </div>
+
+    <div class="container">
+            <div id="border" class="box"></div>
+    </div>   
+</body>
+</html>

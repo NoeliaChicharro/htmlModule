@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    width: 100vw;
+    height: 8vh;
+    background-image: linear-gradient(to right, rgb(126, 120, 214), violet);
+    position: fixed;
+}
+
+nav ul{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav::after{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #2c90fc;
+    background-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+}
+
+nav ul li img{
+    width: 10rem;
+    height: 6rem;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+section div{
+    position: relative;
+    width: 53rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    border: solid black 1px;
+    background-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%);
+}
+
+section div p{
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 0 black;
+}
+
+main{
+    width: 100vw;
+    height: 70vh;
+    background-image: linear-gradient(to right, rgb(126, 120, 214), violet );
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main img{
+    width: 15rem;
+    height: 15rem;
+}
+
+footer{
+    width: 100vw;
+    height: 8vh;
+    background-image: linear-gradient(to right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    font-family: sans-serif;
+    color: rgb(51, 136, 25);
+}

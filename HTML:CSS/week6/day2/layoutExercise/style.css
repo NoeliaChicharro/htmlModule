@@ -1,0 +1,155 @@
+/* === Small CSS Reset === */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* === Navigation === */
+nav{
+    width: 100%;
+    height: 38px;
+    background: #222;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li{
+    padding: 8px;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li:first-child{
+    background: #00b185;
+}
+
+nav ul a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li.dropdown-trigger{
+    position: relative;
+}
+
+nav ul li.dropdown-trigger ul{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 0;
+}
+
+/* === Dropdown Part === */
+  
+nav ul li.dropdown-trigger:hover ul{
+    display: flex;
+  }
+
+  header{
+    position: relative;
+    min-height: 450px;
+    max-height: 600px;
+    background: url(http://placekitten.com/1920/600);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  header h2{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    font-size: 24px;
+    background: #222;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* === Our Team === */
+  
+  section.team{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 3em 0;
+  }
+
+  section.team h1{
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  section.team h4{
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  section.team div.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  section.team img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  section.team article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.team article h2{
+    font-size: 24px;
+    padding: 5px;
+  }
+
+  section.team article p{
+    padding: 5px;
+  }
+
+
+  /* === Section Our Work === */
+  
+  section.work{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  section.work article{
+    width: 25%;
+    /* height: 500px; */
+    margin: 3em 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.work article .image-container{
+    width: 100%;
+    height: 200px;
+  }
+
+  
+  section.work article .image-container img{
+    width: 100%;
+    height: auto;
+  }

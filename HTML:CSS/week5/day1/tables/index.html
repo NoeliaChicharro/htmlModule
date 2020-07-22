@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Only use tables if they are reeeeally nessesairy! they are not responcife.
+what do tables have: they have table-rows, they can have table-data or table-heads. 
+<table> the first thing u need.! (close tag)
+   <tr> next u need table rows (close tag)
+       <td> or <th> then u can fill in the data u want to (close tag)
+
+tables can have captions, it's like a title.
+on default every element in a table does have an individual border. (if u give them a border)
+to avoid this use colspan='2'-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tables</title>
+    <style>
+        table{
+            border: solid 1px rgb(85, 83, 83);
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        table td{
+            border: solid 1px black;
+            font-family: sans-serif;
+        }
+
+        table th{
+            background-color: rgb(85, 83, 83);
+            color: #fff;
+            font-family: sans-serif;
+        }
+
+        table tr:nth-child(odd){
+            background-color: rgb(212, 208, 208);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Number</th>
+            <th>First Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Eve</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Adam</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jill</td>
+        </tr>
+    </table>  
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        *, *:after, *:before{
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            display: grid;
+
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr ;
+        }
+
+        #first{
+            grid-column: 1/3;
+            /*grid-column: span 2;*/
+            background-color: hotpink;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- Giving the main container the display grid attribute, automatically sets the height and the width of the inner elements.
+     One fr is one fraction of the container. It will do it automatically!
+     -->
+
+<main>
+    <div id="first" ></div>
+    <div id="second" style="background-color: aquamarine"></div>
+    <div id="third" style="background-color: chocolate"></div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transition</title>
+  <style>
+    .mybox{
+      width: 150px;
+      height: 150px;
+      background: lightgoldenrodyellow;
+      border: solid 1px black;
+      transition: 10s;
+    }
+
+    .mybox:hover{
+      background: red;
+      border: dashed 3px blue;
+      border-radius: 50%;
+      transform: translateX(500px) skew(45deg) scale(0.1) rotate(34deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="mybox"></div>
+
+</body>
+</html>

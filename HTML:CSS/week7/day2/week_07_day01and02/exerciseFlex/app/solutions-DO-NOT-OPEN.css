@@ -1,0 +1,191 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  width:100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header.main-header{
+  min-height: 50vh;
+  background-color: rgb(255, 80, 80);
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.exercise{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(82, 255, 131);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: solid 5px #222;
+  position: relative;
+}
+
+.exercise h3{
+  margin: 2em 0;
+}
+
+.exercise button{
+  color: rgb(163, 35, 35);
+  background-color: transparent;
+  border: rgb(255, 80, 80) solid 2px;
+  border-radius: 10px;
+  padding: 0.8em 1.4em;
+  font-size: 1.5em;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.exercise button.showing::after{
+  content: 'SHOWING EXAMPLE';
+  color: red;
+  position: absolute;
+  left: 120%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+}
+
+.exercise button:hover{
+  color: #222;
+  background-color: rgb(255, 80, 80);
+  cursor: pointer;
+}
+
+.exercise .container{
+  width: 80%;
+  height: 80%;
+  border: solid 2px #222;
+}
+
+.exercise .container article{
+  width: 150px;
+  height: 150px;
+  background-color: #333;
+  border: dashed 2px white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.exercise-4 .container article{
+  width: 50%;
+  height: 50%;
+}
+
+.exercise-4, .exercise-5 {
+  overflow: auto;
+}
+
+.exercise-5 article:nth-child(1){
+  width: 100%;
+}
+.exercise-5 article:nth-child(2){
+  width: 50%;
+}
+.exercise-5 article:nth-child(3){
+  width: 50%;
+}
+.exercise-5 article:nth-child(4){
+  width: 60%;
+}
+.exercise-5 article:nth-child(5){
+  width: 40%;
+}
+.exercise-5 article:nth-child(6){
+  width: 100%;
+}
+
+.exercise-1 .container.active{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 80, 80); 
+}
+
+.exercise-2 .container.active{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgb(255, 80, 80); 
+}
+
+.exercise-3 .container.active{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  background-color: rgb(255, 80, 80); 
+}
+
+.exercise-4 .container.active{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.exercise-5 .container.active{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+header nav ul{
+  display: flex;
+  margin-top: 3em;
+  list-style: none;
+}
+
+header nav ul li{
+  padding: 1em;
+  margin: 0 1.5em;
+  border: solid 2px white;
+  border-radius: 10px;
+}
+
+header nav ul li:hover{
+  background: rgb(82, 255, 131);
+}
+
+header nav ul a{
+  color: white;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+.top{
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(255, 80, 80);
+  border-radius: 10px;
+  border: solid 2px white;
+  top: 10px;
+  right: 10px;
+  color: white;
+  padding: 1em;
+  font-size: 1.5em;
+
+}
+
+.top a{
+  text-decoration: none; color: white;
+}

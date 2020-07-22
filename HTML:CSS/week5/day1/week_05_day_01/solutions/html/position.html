@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>¨
+  <style>
+    /* === Small CSS Reset === */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    *, *::after, *::before{
+      box-sizing: border-box;
+    }
+    /* ===  === */
+    
+    body{width: vw; height: 200vh;background-color: #222;}
+
+    .wrapper{
+      border: solid 2px hotpink;
+      width: 80vw;
+      height: 80vh;
+      margin: 2em auto;
+      position: relative;
+    }
+
+    .box{
+      width: 100px;
+      height: 100px;
+      
+    }
+
+    #static{
+      background-color: lime;
+    }
+
+    #relative{
+      background-color: orange;
+      position: relative;
+      left: 100px;
+    }
+
+    #absolute{
+      background-color: purple;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    #fixed{
+      background-color: #eee;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="box" id="static"></div>
+    <div class="box" id="relative"></div>
+    <div class="box" id="absolute"></div>
+    <div class="box" id="fixed"></div>
+  </div>
+  <div><a href="../index.html">BACK HOME</a></div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- a form comes in to a <form> tag. and withing the form-tag <label...> tags.
+there are email, tel, url, radio, checkbox, date, time, color, submit reset labels.
+labels are like titels for the coresponding input. If u click on the title the curser
+will automaticlly jumpt into the right input field.
+
+first name: ----  <input type="text" (for smaller inputs)
+sur nacme: ---- <input type="text"
+email ---- <input="email" 
+password: ---- <input="password"
+tel: ---- <input="tel"
+webside --- <input="url" 
+radio ---- <input type="radio" name="identisch" (only one can be choosen)
+checkbock ---- <input type="checkbox" (one or more can be choosen)
+question (numered) ---- <input type"number" min="1" max="4"
+bottem-down ---- <select> mit einigen <option>
+bithday ---- <input type="date"
+color ---- <input type="color"
+time ---- <input type="time"
+data-list <input type="browsers" and <datalist id="browsers" (for type ahead funktion)
+comment ---- <texarea> (needs an end tag) 
+submit ---- <input type="submit"
+reset ---- <input type="reset"    
+(input does not have an end tag)
+
+a labe tag looks like: <label for="firstname"</label>
+now it the titel of the input is the same as the label one u can link them together
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    input{
+        border-radius: 1px;
+    }
+
+    form{
+        font-family: sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="firtName">First Name<input type="text"></label>
+        <label for="email">E-Mail<input type="email"></label>
+        <label for="tel">Telephone<input type="tel"></label>
+        <label for="gender">Female<input type="radio" name="identity">Male<input type="radio" name="identity"></label>
+        <label for="bithday">Bithdate<input type="date"></label>
+        <label for="city">
+            <select>
+                <option value="zurich">Zurich</option>
+                <option value="madrid">Madrid</option>
+                <option value="wien">Wien</option>
+                <option value="berlin">Berlin</option>
+            </select> 
+        </label>    
+        <label for="comment">Comment<textarea cols="30" rows="10"></textarea></label>
+        <input type="submit">
+        <label for="check">true<input type="checkbox">false<input type="checkbox"></label>
+
+        
+    </form>
+    
+</body>
+</html>

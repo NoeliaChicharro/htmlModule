@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PositioningTheSecond</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container{
+            margin: 10vh auto;
+            height: 80%;
+            width: 80%;
+            background-color: rgb(101, 101, 156);
+            position: relative;
+        } 
+
+        .box{
+            width: 150px;
+            height: 150px;
+            border: dotted 2px black;
+        }
+
+        .box:nth-child(1){
+            background-color: lightgreen;  
+            position: absolute;
+            top: 0;
+            left: 0;  
+            /* That index starts at 0. (imagine it as layers) 
+            This will only work with absolute, relative and fixed positioned elements. not static ones. */ 
+            z-index: 99;   
+        }
+
+        .box:nth-child(2){
+            background-color: lightpink;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+
+        }
+
+        .box:nth-child(3){
+            background-color: hotpink;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box:nth-child(4){
+            background-color: yellowgreen;
+            top: 0;
+            right: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+    </div>
+</body>
+</html>
